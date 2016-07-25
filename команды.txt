@@ -1,0 +1,5 @@
+cd Desktop\уроки Selenium\Занятие 1\сценарий
+
+java -jar C:\Users\romashov\Downloads\selenium-server-standalone-2.53.1.jar -help
+
+java -jar C:\Users\romashov\Downloads\selenium-server-standalone-2.53.1.jar -htmlSuite *firefox http://demo.litecart.net/en/ litecart.html report.html
