@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://demo.litecart.net/" />
-<title>remove_from_cart</title>
+<title>verify_homepage_blocks</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">remove_from_cart</td></tr>
+<tr><td rowspan="1" colspan="3">verify_homepage_blocks</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -17,35 +17,16 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>css=div#cart a.content</td>
-	<td></td>
+	<td>assertXpathCount</td>
+	<td>//div[@id='box-most-popular']/div/ul/li</td>
+	<td>5</td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>name=remove_cart_item</td>
-	<td></td>
+	<td>assertCssCount</td>
+	<td>div#box-campaigns &gt; div &gt; ul &gt; li</td>
+	<td>1</td>
 </tr>
-<tr>
-	<td>click</td>
-	<td>name=remove_cart_item</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>//div[@id='checkout-cart-wrapper']/p/em</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=img[alt=&quot;Demo Store&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>id=navigation</td>
-	<td></td>
-</tr>
+
 </tbody></table>
 </body>
 </html>
